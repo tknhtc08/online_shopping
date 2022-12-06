@@ -5,26 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <title>Document</title>
 </head>
 <body>
     <div class="bar">
         <ul>
-         <li><a href="#">Anasayfa</a></li>
+         <li><a href="kategori.html">Anasayfa</a></li>
          <li class="dropdown"><a href="#">Kategori</a>
             <div class="dropdown-content">
                 <ul>
-                    <li><a href="#">secenek 1</a></li>
-                    <li><a href="#">secenek 2</a></li>
-                    <li><a href="#">secenek 3</a></li>
-                    <li><a href="#">secenek 4</a></li>
-                    <li><a href="#">secenek 5</a></li>
-                    <li><a href="#">secenek 6</a></li>
+                    <li><a href="#">APPLE</a></li>
+                    <li><a href="#">GENERAL MOBİLE</a></li>
+                    <li><a href="#">HONOR</a></li>
+                    <li><a href="#">OPPO</a></li>
+                    <li><a href="#">REALİME</a></li>
+                    <li><a href="#">SAMSUNG</a></li>
+                    <li><a href="#">XIAOMI</a></li>
+                    <li><a href="#">VİVO</a></li>
                 </ul>
               </div>
         </li>
-         <li><a href="#">Sepet</a></li>
-         <li style="float:right"><a href="#">Giriş</a></li>
+         <li><a href="sepet.html">Sepet</a></li>
+         <li style="float:right"><a href="index.html">Giriş</a></li>
         </ul>
     </div>
     <div class="container">
@@ -35,15 +39,23 @@
                 
 
             <div class="other_img">
+                <img src="image/telefon4.webp" class="mini_img" alt="">
+                <img src="image/telefon5.jpg" class="mini_img" alt="">
+                <img src="image/telefon6.webp" class="mini_img" alt="">
+                <img src="image/telefon2_3.jpg" class="mini_img" alt="">
+                <img src="image/telefon3.jpg" class="mini_img" alt="">
+                <img src="image/telefon4.webp" class="mini_img" alt="">
+                <img src="image/telefon6.webp" class="mini_img" alt="">
 
             </div>
             <div class="like_sepet">
-
+                <button class="sepet_btn">SEPETE EKLE</button>
+                <button class="like_btn"><i class="fa-regular fa-heart"></i></button>
             </div>
         </div>
             <div class="phone_info">
                 <div class="hd">
-                    <button class="back" onclick="returnBack()">x</button>
+                    <button class="back" onclick="inceleGoster()"><i class="fa-regular fa-circle-xmark"></i></button>
                     <h3>SAMSUN J7 PRİME</h3>
                     <h2 style="float: right;">3,999 TL</h2>
                 </div>
@@ -130,13 +142,10 @@
                             <td class="td_3">HBCV00001HFMSM</td>
                         </tr>
                     </tbody>
-
-                </table>
-                
+                </table>                
             </div>
-
         </div>
-        <div class="selection"  id="selection">
+        <div class="selection"  id="selectionid">
             <div class="box">
                 <img src="image/telefon2_3.jpg" class="phone" alt="">
                 <h3>GENERAL MOBİLE</h3>
@@ -238,7 +247,7 @@
     </div>
     <script>
         function inceleGoster() {
-        var x = document.getElementById("selection");
+        var x = document.getElementById("selectionid");
         var y = document.getElementById("incele");
         if (x.style.display === "none") {
             x.style.display = "flex";
@@ -248,17 +257,7 @@
             y.style.display = "flex";
         }
         }
-        function returnBack() {
-        var x = document.getElementById("incele");
-        var y = document.getElementById("selection");
-        if (x.style.display === "none") {
-            x.style.display = "flex";
-            y.style.display = "none";
-        } else {
-            x.style.display = "none";
-            y.style.display = "flex";
-        }
-        }
+
     </script>
 </body>
 </html>

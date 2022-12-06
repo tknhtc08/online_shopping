@@ -10,26 +10,28 @@
 <body>
     <div class="bar">
        <ul>
-        <li><a href="#">Anasayfa</a></li>
+        <li><a href="kategori.html">Anasayfa</a></li>
         <li class="dropdown"><a href="#">Kategori</a>
             <div class="dropdown-content">
                 <ul>
-                    <li><a href="#">secenek 1</a></li>
-                    <li><a href="#">secenek 2</a></li>
-                    <li><a href="#">secenek 3</a></li>
-                    <li><a href="#">secenek 4</a></li>
-                    <li><a href="#">secenek 5</a></li>
-                    <li><a href="#">secenek 6</a></li>
+                    <li><a href="#">APPLE</a></li>
+                    <li><a href="#">GENERAL MOBİLE</a></li>
+                    <li><a href="#">HONOR</a></li>
+                    <li><a href="#">OPPO</a></li>
+                    <li><a href="#">REALİME</a></li>
+                    <li><a href="#">SAMSUNG</a></li>
+                    <li><a href="#">XIAOMI</a></li>
+                    <li><a href="#">VİVO</a></li>
                 </ul>
               </div>
         </li>
-        <li><a href="#">Sepet</a></li>
-        <li style="float:right"><a href="#">Giriş</a></li>
+        <li><a href="sepet.html">Sepet</a></li>
+        <li style="float:right" id="name"><a href="index.html">Giriş</a></li>
        </ul>
             
     </div>
     <div class="container_login">
-        <div id="ornek"  class="login">
+        <div id="loginid"  class="login">
             <div class="form">
                 <h2 class="welcome">Hoş Geldiniz</h2>
                 <p>Devam etmek için lütfen giriş yapın!</p>
@@ -41,7 +43,7 @@
 
             </div>
          </div>
-         <div id="ornek2" class=" signin">
+         <div id="singinid" class=" signin">
             <div class="form">
                 <h2 class="welcome">Hoş Geldiniz</h2>
                 <p>Kayıt olmak için bilgilerinizi giriniz!</p>
@@ -60,8 +62,8 @@
     </div>
     <script>
         function gizleGoster() {
-        var x = document.getElementById("ornek");
-        var y = document.getElementById("ornek2");
+        var x = document.getElementById("loginid");
+        var y = document.getElementById("singinid");
         if (x.style.display === "none") {
             x.style.display = "flex";
             y.style.display = "none";
