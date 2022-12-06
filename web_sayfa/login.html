@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bar">
+       <ul>
+        <li><a href="index.html">Anasayfa</a></li>
+        <li class="dropdown"><a href="#">Kategori</a>
+            <div class="dropdown-content">
+                <ul>
+                    <li><a href="#">APPLE</a></li>
+                    <li><a href="#">GENERAL MOBİLE</a></li>
+                    <li><a href="#">HONOR</a></li>
+                    <li><a href="#">OPPO</a></li>
+                    <li><a href="#">REALİME</a></li>
+                    <li><a href="#">SAMSUNG</a></li>
+                    <li><a href="#">XIAOMI</a></li>
+                    <li><a href="#">VİVO</a></li>
+                </ul>
+              </div>
+        </li>
+        <li><a href="sepet.html">Sepet</a></li>
+        <li style="float:right" id="name"><a href="login.html">Giriş</a></li>
+       </ul>
+            
+    </div>
+    <div class="container_login">
+        <div id="loginid"  class="login">
+            <div class="form">
+                <h2 class="welcome">Hoş Geldiniz</h2>
+                <p>Devam etmek için lütfen giriş yapın!</p>
+                <input type="text" class="inpt" placeholder="Kullanıcı Adı">
+                <input type="password" class="inpt" placeholder="Şifre">
+                <button class="btn">Giriş Yap</button>
+                <p style="text-align: right;"><a href="#">Şifremi Unuttum</a></p>
+                <p style="text-align: right;"><a href="#" onclick="gizleGoster()">kaydol!</a></p>
+
+            </div>
+         </div>
+         <div id="singinid" class=" signin">
+            <div class="form">
+                <h2 class="welcome">Hoş Geldiniz</h2>
+                <p>Kayıt olmak için bilgilerinizi giriniz!</p>
+                <input type="email" class="inpt" placeholder="E-mail">
+                <input type="text" class="inpt" placeholder="Kullanıcı Adı">
+                <input type="password" class="inpt" placeholder="Yeni şifre giriniz">
+                <input type="password" class="inpt" placeholder="Şifrenizi tekrar giriniz">
+                <button class="btn">kaydol</button>
+                
+                <p style="text-align: right;"><a href="#" onclick="gizleGoster()">giriş yap!</a></p>
+            </div>
+         </div>
+
+    </div>
+
+    </div>
+    <script>
+        function gizleGoster() {
+        var x = document.getElementById("loginid");
+        var y = document.getElementById("singinid");
+        if (x.style.display === "none") {
+            x.style.display = "flex";
+            y.style.display = "none";
+        } else {
+            x.style.display = "none";
+            y.style.display = "flex";
+        }
+        }
+    </script>
+</body>
+</html>

@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>Document</title>
 </head>
 <body>
     <div class="bar">
-       <ul>
-        <li><a href="kategori.html">Anasayfa</a></li>
-        <li class="dropdown"><a href="#">Kategori</a>
+        <ul>
+         <li><a href="index.html">Anasayfa</a></li>
+         <li class="dropdown"><a href="#">Kategori</a>
             <div class="dropdown-content">
                 <ul>
                     <li><a href="#">APPLE</a></li>
@@ -25,45 +27,228 @@
                 </ul>
               </div>
         </li>
-        <li><a href="sepet.html">Sepet</a></li>
-        <li style="float:right" id="name"><a href="index.html">Giriş</a></li>
-       </ul>
-            
+         <li><a href="sepet.html">Sepet</a></li>
+         <li style="float:right"><a href="login.html">Giriş</a></li>
+        </ul>
     </div>
-    <div class="container_login">
-        <div id="loginid"  class="login">
-            <div class="form">
-                <h2 class="welcome">Hoş Geldiniz</h2>
-                <p>Devam etmek için lütfen giriş yapın!</p>
-                <input type="text" class="inpt" placeholder="Kullanıcı Adı">
-                <input type="password" class="inpt" placeholder="Şifre">
-                <button class="btn">Giriş Yap</button>
-                <p style="text-align: right;"><a href="#">Şifremi Unuttum</a></p>
-                <p style="text-align: right;"><a href="#" onclick="gizleGoster()">kaydol!</a></p>
+    <div class="container">
+        <div class="incele" id="incele">
+            <div class="sol">
 
-            </div>
-         </div>
-         <div id="singinid" class=" signin">
-            <div class="form">
-                <h2 class="welcome">Hoş Geldiniz</h2>
-                <p>Kayıt olmak için bilgilerinizi giriniz!</p>
-                <input type="email" class="inpt" placeholder="E-mail">
-                <input type="text" class="inpt" placeholder="Kullanıcı Adı">
-                <input type="password" class="inpt" placeholder="Yeni şifre giriniz">
-                <input type="password" class="inpt" placeholder="Şifrenizi tekrar giriniz">
-                <button class="btn">kaydol</button>
+                <img src="image/telefon3.jpg" alt="">
                 
-                <p style="text-align: right;"><a href="#" onclick="gizleGoster()">giriş yap!</a></p>
+
+            <div class="other_img">
+                <img src="image/telefon4.webp" class="mini_img" alt="">
+                <img src="image/telefon5.jpg" class="mini_img" alt="">
+                <img src="image/telefon6.webp" class="mini_img" alt="">
+                <img src="image/telefon2_3.jpg" class="mini_img" alt="">
+                <img src="image/telefon3.jpg" class="mini_img" alt="">
+                <img src="image/telefon4.webp" class="mini_img" alt="">
+                <img src="image/telefon6.webp" class="mini_img" alt="">
+
             </div>
-         </div>
+                <div class="like_sepet">
+                    <button class="sepet_btn">SEPETE EKLE</button>
+                    <button class="like_btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+            </div>
+            <div class="phone_info">
+                <div class="hd">
+                    <button class="back" onclick="inceleGoster()"><i class="fa-regular fa-circle-xmark"></i></button>
+                    <h3>SAMSUN J7 PRİME</h3>
+                    <h2 style="float: right;">3,999 TL</h2>
+                </div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="td_1">Dahili Hafıza</td>
+                            <td class="td_2">:</td>
+                            <td class="td_3">128 GB</td>
+                        </tr>
+                        <tr>
+                            <td class="td_1">Ekran Boyut Aralığı</td>
+                            <td class="td_2">:</td>
+                            <td class="td_3">6 inç ve Üzeri</td>
+                        </tr>
+                        <tr>
+                            <td class="td_1">Ekran Boyutu</td>
+                            <td class="td_2">:</td>
+                            <td class="td_3">6,53 inç</td>
+                        </tr>
+                        <tr>
+                            <td class="td_1">Garanti Tipi</td>
+                            <td class="td_2">:</td>
+                            <td class="td_3">Resmi Distribütör Garantili</td>
+                        </tr>
+                        <tr>
+                            <td class="td_1">Kablosuz Şarj</td>
+                            <td class="td_2">:</td>
+                            <td class="td_3">Yok</td>
+                        </tr>
+                        <tr>
+                            <td class="td_1">Kamera Çözünürlüğü Aralığı</td>
+                            <td class="td_2">:</td>
+                            <td class="td_3">13 - 19,9 MP</td>
+                        </tr>
+                        <tr>
+                            <td class="td_1">Kamera Çözünürlüğü</td>
+                            <td class="td_2">:</td>
+                            <td class="td_3">13 MP + 2 MP + 2 MP</td>
+                        </tr>
+                        <tr>
+                            <td class="td_1">Ön (Selfie) Kamera Aralığı</td>
+                            <td class="td_2">:</td>
+                            <td class="td_3">5 - 7,9 MP</td>
+                        </tr>
+                        <tr>
+                            <td class="td_1">Ön (Selfie) Kamera</td>
+                            <td class="td_2">:</td>
+                            <td class="td_3">5 MP</td>
+                        </tr>
+                        <tr>
+                            <td class="td_1">Pil Gücü Aralığı</td>
+                            <td class="td_2">:</td>
+                            <td class="td_3">5000 mAh ve Üzeri</td>
+                        </tr>
+                        <tr>
+                            <td class="td_1">Pil Gücü</td>
+                            <td class="td_2">:</td>
+                            <td class="td_3">5000 mAh</td>
+                        </tr>
+                        <tr>
+                            <td class="td_1">RAM Kapasitesi</td>
+                            <td class="td_2">:</td>
+                            <td class="td_3">4 GB RAM</td>
+                        </tr>
+                        <tr>
+                            <td class="td_1">Yüz Tanıma</td>
+                            <td class="td_2">:</td>
+                            <td class="td_3">Var</td>
+                        </tr>
+                        <tr>
+                            <td class="td_1">Garanti Süresi (Ay)</td>
+                            <td class="td_2">:</td>
+                            <td class="td_3">24</td>
+                        </tr>
+                        <tr>
+                            <td class="td_1">Yurt Dışı Satış</td>
+                            <td class="td_2">:</td>
+                            <td class="td_3">Yok</td>
+                        </tr>
+                        <tr>
+                            <td class="td_1">Stok Kodu</td>
+                            <td class="td_2">:</td>
+                            <td class="td_3">HBCV00001HFMSM</td>
+                        </tr>
+                    </tbody>
+                </table>                
+            </div>
+        </div>
+        <div class="selection"  id="selectionid">
+            <div class="box">
+                <img src="image/telefon2_3.jpg" class="phone" alt="">
+                <h3>GENERAL MOBİLE</h3>
+                <p>GM-20 PRO</p>
+                <P>64GB RAM 4GB</P>
+                <button class="btn" onclick="inceleGoster()">İNCELE</button>
+            </div>
+            
+            <div class="box">
+                <img src="image/telefon3.jpg" class="phone" alt="">
+                <h3>GENERAL MOBİLE</h3>
+                <p>GM-20 PRO</p>
+                <P>64GB RAM 4GB</P>
+                <button class="btn" onclick="inceleGoster()">İNCELE</button>
+            </div>
+            <div class="box">
+                <img src="image/telefon4.webp" class="phone" alt="">
+                <h3>GENERAL MOBİLE</h3>
+                <p>GM-20 PRO</p>
+                <P>64GB RAM 4GB</P>
+                <button class="btn" onclick="inceleGoster()">İNCELE</button>
+            </div>
+            
+            <div class="box">
+                <img src="image/telefon5.jpg" class="phone" alt="">
+                <h3>GENERAL MOBİLE</h3>
+                <p>GM-20 PRO</p>
+                <P>64GB RAM 4GB</P>
+                <button class="btn" onclick="inceleGoster()">İNCELE</button>
+            </div>
+            <div class="box">
+                <img src="image/telefon6.webp" class="phone" alt="">
+                <h3>GENERAL MOBİLE</h3>
+                <p>GM-20 PRO</p>
+                <P>64GB RAM 4GB</P>
+                <button class="btn" onclick="inceleGoster()">İNCELE</button>
+            </div>
+            <div class="box">
+                <img src="image/telefon2_3.jpg" class="phone" alt="">
+                <h3>GENERAL MOBİLE</h3>
+                <p>GM-20 PRO</p>
+                <P>64GB RAM 4GB</P>
+                <button class="btn" onclick="inceleGoster()">İNCELE</button>
+            </div>
+            <div class="box">
+                <img src="image/telefon3.jpg" class="phone" alt="">
+                <h3>GENERAL MOBİLE</h3>
+                <p>GM-20 PRO</p>
+                <P>64GB RAM 4GB</P>
+                <button class="btn" onclick="inceleGoster()">İNCELE</button>
+            </div>
+            <div class="box">
+                <img src="image/telefon4.webp" class="phone" alt="">
+                <h3>GENERAL MOBİLE</h3>
+                <p>GM-20 PRO</p>
+                <P>64GB RAM 4GB</P>
+                <button class="btn" onclick="inceleGoster()">İNCELE</button>
+            </div>
+            <div class="box">
+                <img src="image/telefon5.jpg" class="phone" alt="">
+                <h3>GENERAL MOBİLE</h3>
+                <p>GM-20 PRO</p>
+                <P>64GB RAM 4GB</P>
+                <button class="btn" onclick="inceleGoster()">İNCELE</button>
+            </div>
+            <div class="box">
+                <img src="image/telefon2_3.jpg" class="phone" alt="">
+                <h3>GENERAL MOBİLE</h3>
+                <p>GM-20 PRO</p>
+                <P>64GB RAM 4GB</P>
+                <button class="btn" onclick="inceleGoster()">İNCELE</button>
+            </div>
+            <div class="box">
+                <img src="image/telefon6.webp" class="phone" alt="">
+                <h3>GENERAL MOBİLE</h3>
+                <p>GM-20 PRO</p>
+                <P>64GB RAM 4GB</P>
+                <button class="btn" onclick="inceleGoster()">İNCELE</button>
+            </div>
+            <div class="box">
+                <img src="image/telefon4.webp" class="phone" alt="">
+                <h3>GENERAL MOBİLE</h3>
+                <p>GM-20 PRO</p>
+                <P>64GB RAM 4GB</P>
+                <button class="btn" onclick="inceleGoster()">İNCELE</button>
+            </div>
+            <div class="box">
+                <img src="image/telefon2_3.jpg" class="phone" alt="">
+                <h3>GENERAL MOBİLE</h3>
+                <p>GM-20 PRO</p>
+                <P>64GB RAM 4GB</P>
+                <button class="btn" onclick="inceleGoster()">İNCELE</button>
+            </div>
+            <footer>
+                <p>Bizi tercih ettiğiniz için teşekkür ederiz</p>
+            </footer>
 
-    </div>
-
+        </div>
     </div>
     <script>
-        function gizleGoster() {
-        var x = document.getElementById("loginid");
-        var y = document.getElementById("singinid");
+        function inceleGoster() {
+        var x = document.getElementById("selectionid");
+        var y = document.getElementById("incele");
         if (x.style.display === "none") {
             x.style.display = "flex";
             y.style.display = "none";
@@ -72,6 +257,7 @@
             y.style.display = "flex";
         }
         }
+
     </script>
 </body>
 </html>
